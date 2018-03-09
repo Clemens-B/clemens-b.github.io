@@ -2,7 +2,7 @@
 title: Progressive Web App for Watched Series
 teaser: You can watch your favourite series on a TV, Laptop, Tablet or even your Smartphone. But there is no central way of managing your watched series and episodes. You either have to chose a mobile app or a website to track your progress. So we build a progressive web app which can do both.
 category: web
-tags: [pwa, node.js, javascript]
+tags: [pwa, nodejs, javascript]
 img: /i/serify.png
 ---
 ![Serify](/i/serify.png)

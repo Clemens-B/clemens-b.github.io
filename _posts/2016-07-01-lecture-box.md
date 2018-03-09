@@ -2,7 +2,7 @@
 title: Lecture Capture Box
 teaser: A arototype to record the screen of the presentator and an IP-camera. 
 category: web
-tags: [webrtc, node.js, javascript]
+tags: [webrtc, nodejs, javascript]
 img: /i/lecturebox.png
 ---
 ![LectureBox](/i/lecturebox.png)
