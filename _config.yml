@@ -1,0 +1,62 @@
+#######################
+# Theme Customization #
+#######################
+
+title: A developer's work                           # used in <title> tag & site header
+author: Clemens.B                       # used in a <meta> tag & /feed.xml
+description: >                              # used in a <meta> tag & /feed.xml
+  My projects
+slogan: by clemens.b                       # used in site header, beside title
+avatar: /i/avatar.png                       # used as portrait in site header
+banner: /i/mountains.svg                    # used as background in site header
+url:                                        # used by plugins to generate feed.xml and sitemap.xml
+baseurl: ''                                 # prepended to all absolute filepaths
+repo:                                        # used in footer
+
+# Objects listed here will appear in the main nav menu.
+# Exceeding four items may cause problems on the desktop (>900px wide) layout.
+nav_menu:
+  - name: LinkedIn
+    url: https://linkedin.com/in/clemens-buckert
+    icon: /i/linkedin-sign.svg
+    outbound: true
+  - name: GitHub
+    url: https://github.com/Clemens-B
+    icon: /i/icons.svg#github
+    outbound: true      # this key sets a link to open in a new window.
+
+
+#################
+# Site Settings #
+#################
+
+incremental: true
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - TODO.md
+
+permalink: /:collection/:path
+
+collections:
+  category: { output: true }
+  tag:      { output: true }
+
+defaults:
+  - scope:  { type:   posts    }
+    values: { layout: post     }
+  - scope:  { type:   tag      }
+    values: { layout: listing  }
+  - scope:  { type:   category }
+    values: { layout: listing  }
+
+sass:
+  sass_dir: _assets/css
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+paginate: 10
